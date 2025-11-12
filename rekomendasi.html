@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Buku - OneRead</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-xl font-bold text-white">OneRead</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#home" class="text-white hover:text-yellow-300 transition">Home</a>
+                    <a href="index.html#rekomendasi" class="text-yellow-300 font-semibold">Rekomendasi Buku</a>
+                    <a href="index.html#edukasi" class="text-white hover:text-yellow-300 transition">Edukasi</a>
+                    <a href="#kontak" class="text-white hover:text-yellow-300 transition">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 px-4">
+    <div class="absolute inset-0 bg-[url('assets/images/library-with-books.jpg')] bg-cover bg-center bg-no-repeat blur-md"></div>
+        <div class="relative z-10 text-white text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+                📚 Koleksi Buku Pilihan
+            </h1>
+            <p class="text-xl text-blue-100 mb-8">
+                Temukan buku terbaik yang cocok untukmu
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Cari judul buku, penulis, atau genre..."
+                        class="w-full px-6 py-4 rounded-full text-gray-800 text-lg focus:outline-none search-focus"
+                    >
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                        Cari
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 px-4 bg-white shadow-md sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap gap-3 justify-center">
+                <button onclick="filterBooks('semua')" class="filter-btn active px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300">
+                    Semua Buku
+                </button>
+                <button onclick="filterBooks('fiksi')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300">
+                    Fiksi
+                </button>
+                <button onclick="filterBooks('non-fiksi')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300">
+                    Non-Fiksi
+                </button>
+                <button onclick="filterBooks('motivasi')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300">
+                    Motivasi
+                </button>
+                <button onclick="filterBooks('sejarah')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300">
+                    Sejarah
+                </button>
+                <button onclick="filterBooks('petualangan')" class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300">
+                    Petualangan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Grid -->
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    <span id="categoryTitle">Semua Buku</span>
+                    <span class="text-lg text-gray-500 ml-2">(<span id="bookCount">12</span> buku)</span>
+                </h2>
+                
+                <select class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>Urutkan: Terpopuler</option>
+                    <option>Urutkan: Terbaru</option>
+                    <option>Urutkan: A-Z</option>
+                    <option>Urutkan: Rating Tertinggi</option>
+                </select>
+            </div>
+
+            <div id="booksGrid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Books akan di-generate oleh JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+                    Muat Lebih Banyak 📖
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-r from-blue-600 to-green-500">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl font-bold mb-4">Belum Menemukan Buku yang Cocok?</h2>
+            <p class="text-xl mb-8">Hubungi kami untuk rekomendasi buku yang sesuai dengan minatmu!</p>
+            <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">
+                Hubungi Kami 💬
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-3xl">📘</span>
+                        <span class="text-2xl font-bold">BacaSeru</span>
+                    </div>
+                    <p class="text-blue-200">Semerbak Literasi dari Sumedang untuk Indonesia</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="text-blue-200 hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="index.html#rekomendasi" class="text-blue-200 hover:text-yellow-300 transition">Rekomendasi</a></li>
+                        <li><a href="index.html#edukasi" class="text-blue-200 hover:text-yellow-300 transition">Edukasi</a></li>
+                        <li><a href="index.html#tentang" class="text-blue-200 hover:text-yellow-300 transition">Tentang</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
+                        <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-feather="phone"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-feather="globe"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 pt-8 text-center">
+                <p class="text-blue-200">© 2025 OneRead | Dibuat Oleh Muhammad Aprizal Sanjaya IFSU</p>
+            </div>
+            <script src="js/rekomendasi.js"></script>
+        </div>
+    </footer>
+</body>
+<script>
+    feather.replace();
+</script>
+</html>
