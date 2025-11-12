@@ -10,7 +10,7 @@
         }
         
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.8), rgba(16, 185, 129, 0.6));
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(16, 185, 129, 0.6));
         }
         
         .card-hover {
@@ -42,4 +42,18 @@
         
         .quiz-btn:active {
             transform: scale(0.98);
+        }
+
+        /* Styling page rekomendasi */
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #3B82F6, #10B981);
+            color: white;
+        }
+
+        .search-focus:focus {
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
         }
