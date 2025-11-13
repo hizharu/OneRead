@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Membaca - OneRead</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="js/edukasi.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-xl font-bold text-white">OneRead</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-yellow-300 transition">Home</a>
+                    <a href="rekomendasi.html" class="text-white hover:text-yellow-300 transition">Rekomendasi</a>
+                    <a href="edukasi.html" class="text-yellow-300 font-semibold">Edukasi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 px-4">
+        <div class="absolute inset-0 bg-[url('assets/images/eduaction.jpg')] bg-cover bg-center bg-no-repeat blur-md"></div>
+            <div class="relative z-10 text-white text-center">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+                    Edukasi Membaca
+                </h1>
+                <p class="text-xl text-blue-700 mb-8">
+                    Tingkatkan Kemampuan Membacamu dengan Tips & Teknik yang Tepat
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manfaat Membaca -->
+    <section class="py-20 px-4 bg-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-600 mb-4">Manfaat Membaca Buku</h2>
+                <p class="text-gray-600 text-lg">Kenapa membaca itu penting untuk kehidupanmu?</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-24 text-4xl icon icon-tabler icons-tabler-outline icon-tabler-brain"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" /><path d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8" /><path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" /><path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" /><path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" /><path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-700">Meningkatkan Daya Ingat</h3>
+                    <p class="text-gray-600">Membaca melatih otak untuk mengingat detail cerita, karakter, dan informasi kompleks</p>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-20 text-4xl icon icon-tabler icons-tabler-outline icon-tabler-leaf"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 21c.5 -4.5 2.5 -8 7 -10" /><path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-700">Mengurangi Stres</h3>
+                    <p class="text-gray-600">Membaca bisa menurunkan tingkat stres hingga 68% hanya dalam 6 menit</p>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-20 text-4xl icon icon-tabler icons-tabler-outline icon-tabler-language"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6.371c0 4.418 -2.239 6.629 -5 6.629" /><path d="M4 6.371h7" /><path d="M5 9c0 2.144 2.252 3.908 6 4" /><path d="M12 20l4 -9l4 9" /><path d="M19.1 18h-6.2" /><path d="M6.694 3l.793 .582" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-700">Menambah Kosakata</h3>
+                    <p class="text-gray-600">Semakin banyak membaca, semakin kaya perbendaharaan kata yang kamu miliki</p>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-24 text-4xl icon icon-tabler icons-tabler-outline icon-tabler-target-arrow"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 7a5 5 0 1 0 5 5" /><path d="M13 3.055a9 9 0 1 0 7.941 7.945" /><path d="M15 6v3h3l3 -3h-3v-3z" /><path d="M15 9l-3 3" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-700">Meningkatkan Fokus</h3>
+                    <p class="text-gray-600">Membaca melatih konsentrasi dan kemampuan fokus dalam jangka waktu lama</p>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" class="text-4xl w-16 h-20 icon icon-tabler icons-tabler-filled icon-tabler-bulb"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" /><path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 0 -1.414z" /><path d="M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7z" /><path d="M14 18a1 1 0 0 1 1 1a3 3 0 0 1 -6 0a1 1 0 0 1 .883 -.993l.117 -.007h4z" /><path d="M12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1 -.471 .192l-.129 .008h-6a1 1 0 0 1 -.6 -.2a6 6 0 0 1 3.6 -10.8z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-red-700">Meningkatkan Kreativitas</h3>
+                    <p class="text-gray-600">Membaca membuka imajinasi dan merangsang pemikiran kreatif</p>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-4xl w-16 h-20 icon icon-tabler icons-tabler-outline icon-tabler-empathize"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" /><path d="M12 21.368l5.095 -5.096a3.088 3.088 0 1 0 -4.367 -4.367l-.728 .727l-.728 -.727a3.088 3.088 0 1 0 -4.367 4.367l5.095 5.096z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-indigo-700">Meningkatkan Empati</h3>
+                    <p class="text-gray-600">Membaca fiksi membantu memahami perasaan dan perspektif orang lain</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipe-tipe Membaca -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-600 mb-4">Tipe-Tipe Membaca</h2>
+                <p class="text-gray-600 text-lg">Kenali jenis pembacaan untuk berbagai kebutuhan</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Skimming -->
+                <div class="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl p-8 text-white">
+                    <div class="flex items-start gap-4 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl w-16 h-20 icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Skimming (Membaca Cepat)</h3>
+                            <p class="text-blue-100 mb-4">Membaca dengan cepat untuk mendapat gambaran umum isi bacaan</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/20 rounded-lg p-4">
+                        <p class="font-semibold mb-2">Cocok untuk:</p>
+                        <ul class="space-y-1 text-sm">
+                            <li>✓ Mencari informasi spesifik</li>
+                            <li>✓ Membaca berita atau artikel</li>
+                            <li>✓ Review materi sebelum ujian</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Scanning -->
+                <div class="bg-gradient-to-br from-green-500 to-teal-500 rounded-xl p-8 text-white">
+                    <div class="flex items-start gap-4 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl w-16 h-20 icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Scanning (Memindai)</h3>
+                            <p class="text-green-100 mb-4">Mencari kata kunci atau informasi tertentu dengan cepat</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/20 rounded-lg p-4">
+                        <p class="font-semibold mb-2">Cocok untuk:</p>
+                        <ul class="space-y-1 text-sm mb-4">
+                            <li>✓ Mencari nomor telepon di buku</li>
+                            <li>✓ Mencari definisi di kamus</li>
+                            <li>✓ Mencari tanggal dalam jadwal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Intensive Reading -->
+                <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl p-8 text-white">
+                    <div class="flex items-start gap-4 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl w-16 h-20 icon icon-tabler icons-tabler-outline icon-tabler-focus-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r=".5" fill="#ffffff" /><path d="M12 12m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M12 3l0 2" /><path d="M3 12l2 0" /><path d="M12 19l0 2" /><path d="M19 12l2 0" /></svg>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Intensive Reading (Detail)</h3>
+                            <p class="text-purple-100 mb-4">Membaca dengan teliti untuk memahami setiap detail</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/20 rounded-lg p-4">
+                        <p class="font-semibold mb-2">Cocok untuk:</p>
+                        <ul class="space-y-1 text-sm">
+                            <li>✓ Buku pelajaran dan textbook</li>
+                            <li>✓ Dokumen penting</li>
+                            <li>✓ Materi yang perlu dipahami mendalam</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Extensive Reading -->
+                <div class="bg-gradient-to-br from-orange-500 to-red-500 rounded-xl p-8 text-white">
+                    <div class="flex items-start gap-4 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl w-16 h-20 icon icon-tabler icons-tabler-outline icon-tabler-book-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z" /><path d="M19 16h-12a2 2 0 0 0 -2 2" /><path d="M9 8h6" /></svg>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Extensive Reading (Luas)</h3>
+                            <p class="text-orange-100 mb-4">Membaca dalam jumlah banyak untuk kesenangan</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/20 rounded-lg p-4">
+                        <p class="font-semibold mb-2">Cocok untuk:</p>
+                        <ul class="space-y-1 text-sm">
+                            <li>✓ Novel dan cerpen</li>
+                            <li>✓ Majalah dan komik</li>
+                            <li>✓ Meningkatkan kebiasaan membaca</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Membaca Efektif -->
+    <section class="py-20 px-4 bg-gradient-to-b from-yellow-50 to-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-600 mb-4">Tips Membaca yang Efektif</h2>
+                <p class="text-gray-600 text-lg">Maksimalkan waktu membacamu dengan tips berikut</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Tip 1 -->
+                <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button onclick="toggleAccordion(0)" class="w-full p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" class="text-3xl w-12 h-12 icon icon-tabler icons-tabler-filled icon-tabler-alarm"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 6.072a8 8 0 1 1 -11.995 7.213l-.005 -.285l.005 -.285a8 8 0 0 1 11.995 -6.643zm-4 2.928a1 1 0 0 0 -1 1v3l.007 .117a1 1 0 0 0 .993 .883h2l.117 -.007a1 1 0 0 0 .883 -.993l-.007 -.117a1 1 0 0 0 -.993 -.883h-1v-2l-.007 -.117a1 1 0 0 0 -.993 -.883z" /><path d="M6.412 3.191a1 1 0 0 1 1.273 1.539l-.097 .08l-2.75 2a1 1 0 0 1 -1.273 -1.54l.097 -.08l2.75 -2z" /><path d="M16.191 3.412a1 1 0 0 1 1.291 -.288l.106 .067l2.75 2a1 1 0 0 1 -1.07 1.685l-.106 -.067l-2.75 -2a1 1 0 0 1 -.22 -1.397z" /></svg>
+                            <span class="text-xl font-bold text-gray-800">1. Tentukan Waktu Membaca yang Tepat</span>
+                        </div>
+                        <span class="accordion-icon text-2xl">+</span>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-6 pb-6">
+                        <p class="text-gray-700 mb-3">Pilih waktu di mana konsentrasimu sedang optimal. Untuk sebagian orang, pagi hari adalah waktu terbaik karena pikiran masih segar.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Pagi hari (06:00 - 08:00) - Pikiran fresh</li>
+                            <li>Sore hari (16:00 - 18:00) - Setelah istirahat</li>
+                            <li>Malam hari (20:00 - 22:00) - Sebelum tidur untuk relaksasi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button onclick="toggleAccordion(1)" class="w-full p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-3xl w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-armchair"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 11a2 2 0 0 1 2 2v2h10v-2a2 2 0 1 1 4 0v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2z" /><path d="M5 11v-5a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v5" /><path d="M6 19v2" /><path d="M18 19v2" /></svg>
+                            <span class="text-xl font-bold text-gray-800">2. Ciptakan Lingkungan yang Nyaman</span>
+                        </div>
+                        <span class="accordion-icon text-2xl">+</span>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-6 pb-6">
+                        <p class="text-gray-700 mb-3">Lingkungan yang nyaman akan membuat sesi membaca lebih menyenangkan dan produktif.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Pencahayaan yang cukup (natural light is best)</li>
+                            <li>Kursi dan posisi yang nyaman</li>
+                            <li>Suhu ruangan yang ideal (20-22°C)</li>
+                            <li>Minimalisir gangguan (silent mode)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button onclick="toggleAccordion(2)" class="w-full p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-3xl w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-target-arrow"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 7a5 5 0 1 0 5 5" /><path d="M13 3.055a9 9 0 1 0 7.941 7.945" /><path d="M15 6v3h3l3 -3h-3v-3z" /><path d="M15 9l-3 3" /></svg>
+                            <span class="text-xl font-bold text-gray-800">3. Tetapkan Target yang Realistis</span>
+                        </div>
+                        <span class="accordion-icon text-2xl">+</span>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-6 pb-6">
+                        <p class="text-gray-700 mb-3">Jangan memaksakan diri. Mulai dengan target kecil dan tingkatkan secara bertahap.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Pemula: 10-15 halaman per hari</li>
+                            <li>Menengah: 20-30 halaman per hari</li>
+                            <li>Mahir: 50+ halaman per hari</li>
+                            <li>Fokus pada konsistensi, bukan kuantitas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tip 4 -->
+                <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button onclick="toggleAccordion(3)" class="w-full p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-3xl w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-writing"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 17v-12c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v12l2 2l2 -2z" /><path d="M16 7h4" /><path d="M18 19h-13a2 2 0 1 1 0 -4h4a2 2 0 1 0 0 -4h-3" /></svg>
+                            <span class="text-xl font-bold text-gray-800">4. Buat Catatan Sambil Membaca</span>
+                        </div>
+                        <span class="accordion-icon text-2xl">+</span>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-6 pb-6">
+                        <p class="text-gray-700 mb-3">Membuat catatan membantu meningkatkan pemahaman dan daya ingat terhadap materi yang dibaca.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Highlight poin-poin penting</li>
+                            <li>Tulis ringkasan setiap bab</li>
+                            <li>Catat pertanyaan atau hal yang menarik</li>
+                            <li>Gunakan sticky notes untuk marking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tip 5 -->
+                <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button onclick="toggleAccordion(4)" class="w-full p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-3xl w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-repeat"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" /><path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3" /></svg>
+                            <span class="text-xl font-bold text-gray-800">5. Praktikkan Teknik Pomodoro</span>
+                        </div>
+                        <span class="accordion-icon text-2xl">+</span>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-6 pb-6">
+                        <p class="text-gray-700 mb-3">Teknik time management yang efektif untuk menjaga fokus dan mencegah burnout.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Baca selama 25 menit fokus penuh</li>
+                            <li>Istirahat 5 menit</li>
+                            <li>Ulangi 4 kali (4 Pomodoro)</li>
+                            <li>Ambil istirahat panjang 15-30 menit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tip 6 -->
+                <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button onclick="toggleAccordion(5)" class="w-full p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" class="text-3xl w-12 h-12 icon icon-tabler icons-tabler-filled icon-tabler-device-mobile"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 2a3 3 0 0 1 2.995 2.824l.005 .176v14a3 3 0 0 1 -2.824 2.995l-.176 .005h-8a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h8zm-4 14a1 1 0 0 0 -.993 .883l-.007 .117l.007 .127a1 1 0 0 0 1.986 0l.007 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm1 -12h-2l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h2l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+                            <span class="text-xl font-bold text-gray-800">6. Hindari Multitasking</span>
+                        </div>
+                        <span class="accordion-icon text-2xl">+</span>
+                    </button>
+                    <div class="accordion-content bg-gray-50 px-6 pb-6">
+                        <p class="text-gray-700 mb-3">Fokus pada satu aktivitas saja untuk hasil maksimal.</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Matikan notifikasi smartphone</li>
+                            <li>Jauhkan gadget dari jangkauan</li>
+                            <li>Jangan sambil nonton TV atau streaming</li>
+                            <li>Fokus 100% pada bacaan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sumber belajar -->
+    <section class="py-20 px-4 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-600 mb-4"> Sumber Belajar Tambahan</h2>
+                <p class="text-gray-600 text-lg">Tools dan aplikasi untuk meningkatkan pengalaman membacamu</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl mb-4 w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-devices"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10z" /><path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" /><path d="M16 9h2" /></svg>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Aplikasi E-Reader</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Kindle</li>
+                        <li>• Google Play Books</li>
+                        <li>• iPusnas</li>
+                        <li>• Gramedia Digital</li>
+                    </ul>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl mb-4 w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-headphones"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" /><path d="M15 13m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" /><path d="M4 15v-3a8 8 0 0 1 16 0v3" /></svg>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Audiobook</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Audible</li>
+                        <li>• Storytel</li>
+                        <li>• Spotify</li>
+                        <li>• YouTube Audiobooks</li>
+                    </ul>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl mb-4 w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-clipboard-text"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M9 12h6" /><path d="M9 16h6" /></svg>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Note Taking Apps</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Notion</li>
+                        <li>• Evernote</li>
+                        <li>• Obsidian</li>
+                        <li>• Google Keep</li>
+                    </ul>
+                </div>
+
+                <div class="card-hover bg-white rounded-xl shadow-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-5xl mb-4 w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-building-community"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8" /><path d="M13 7l0 .01" /><path d="M17 7l0 .01" /><path d="M17 11l0 .01" /><path d="M17 15l0 .01" /></svg>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Reading Community</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Goodreads</li>
+                        <li>• Book Club Online</li>
+                        <li>• Reddit r/books</li>
+                        <li>• Instagram #bookstagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Myth vs Fact -->
+    <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-600 mb-4"> Mitos vs Fakta Membaca</h2>
+                <p class="text-gray-600 text-lg">Jangan percaya mitos yang salah tentang membaca!</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="bg-red-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ad0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                <h3 class="text-2xl font-bold text-red-600">MITOS</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">"Membaca cepat = tidak paham isi buku"</p>
+                        </div>
+                        <div class="bg-green-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008a29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                <h3 class="text-2xl font-bold text-green-600">FAKTA</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">Speed reading dengan teknik yang tepat justru meningkatkan fokus dan pemahaman</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="bg-red-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ad0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                <h3 class="text-2xl font-bold text-red-600">MITOS</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">"Harus baca dari halaman pertama sampai terakhir"</p>
+                        </div>
+                        <div class="bg-green-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008a29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                <h3 class="text-2xl font-bold text-green-600">FAKTA</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">Tidak apa skip bab yang kurang menarik. Yang penting kamu dapat manfaat dari buku tersebut</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="bg-red-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ad0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                <h3 class="text-2xl font-bold text-red-600">MITOS</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">"Baca buku fisik lebih baik dari e-book"</p>
+                        </div>
+                        <div class="bg-green-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008a29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                <h3 class="text-2xl font-bold text-green-600">FAKTA</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">Keduanya sama baiknya! Pilih yang sesuai dengan preferensi dan kenyamananmu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="grid md:grid-cols-2">
+                        <div class="bg-red-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ad0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                                <h3 class="text-2xl font-bold text-red-600">MITOS</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">"Tidak punya waktu untuk membaca"</p>
+                        </div>
+                        <div class="bg-green-50 p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008a29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12 icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                                <h3 class="text-2xl font-bold text-green-600">FAKTA</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg">15 menit sehari sudah cukup! Manfaatkan waktu di transportasi, sebelum tidur, atau saat break</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- CTA Section -->
+<section class="py-24 px-4 relative overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-100 to-blue-100">
+<div class="absolute inset-0 opacity-20">
+    <div class="absolute top-10 left-10 w-72 h-72 bg-purple-300 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-5xl mx-auto relative z-10">
+    <div class="text-center mb-12">
+    <h2 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+        Jangan Biarkan Mimpimu<br>Hanya Jadi Lamunan
+    </h2>
+    <p class="text-2xl text-indigo-600 mb-4 font-light italic">
+        "Buku adalah jendela dunia, dan kamu memegang kuncinya"
+    </p>
+    </div>
+    <div class="bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-12 mb-10 border border-gray-200 shadow-md">
+    <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+        <p class="text-xl md:text-2xl font-semibold text-indigo-600 text-center mb-8">
+        Tahukah kamu? Setiap halaman yang kau baca adalah investasi untuk masa depanmu.
+        </p>
+
+        <p>
+        Di tengah hiruk-pikuk kehidupan yang serba cepat ini, 
+        <strong class="text-indigo-600">membaca bukan lagi sekadar hobi</strong> — ia adalah 
+        <strong class="text-indigo-600">keterampilan bertahan hidup</strong>. 
+        Setiap buku yang kau taklukkan adalah tangga menuju versi terbaik dari dirimu.
+        </p>
+
+        <p>
+        Bayangkan, <em>hanya dengan 15 menit sehari</em>, kau bisa menyelesaikan 20–30 buku dalam setahun. 
+        Itu artinya <strong class="text-indigo-600">20–30 perspektif baru, peluang baru, dan alasan baru untuk berkembang</strong>.
+        </p>
+
+        <div class="bg-gradient-to-r from-indigo-200/50 to-purple-200/50 rounded-2xl p-6 my-8 border-l-4 border-indigo-400">
+        <p class="text-xl font-semibold text-indigo-700 mb-3">
+            Renungkan Sejenak...
+        </p>
+        <p class="text-gray-700">
+            Berapa banyak mimpi yang tertunda karena kau merasa "belum siap"? 
+            Berapa banyak peluang yang terlewat karena kau merasa "belum tahu cukup"? 
+            <strong>Buku adalah jalan pintasmu untuk menutup jarak itu.</strong>
+        </p>
+        </div>
+
+        <p>
+        Orang-orang sukses di dunia ini memiliki satu kesamaan: 
+        <strong class="text-indigo-600">mereka tidak pernah berhenti belajar</strong>. 
+        Bill Gates membaca 50 buku setahun. Warren Buffett menghabiskan 80% waktunya untuk membaca. 
+        Mereka tahu bahwa <em>pengetahuan adalah aset paling berharga</em>.
+        </p>
+
+        <p class="text-xl font-semibold text-center text-indigo-700 mt-8">
+        Pertanyaannya bukan “Apakah aku punya waktu untuk membaca?”<br>
+        Tapi, “Apakah aku mau terus tertinggal?”
+        </p>
+    </div>
+    </div>
+    <div class="text-center space-y-6">
+    <p class="text-2xl text-gray-800 font-semibold mb-6">
+        Mulailah hari ini. Mulailah sekarang juga.<br>
+        <span class="text-indigo-600">Masa depanmu menunggumu di setiap halaman.</span>
+    </p>
+    </div>
+    <div class="mt-16 text-center">
+    <div class="inline-block bg-white/60 backdrop-blur-md rounded-2xl px-8 py-6 border border-gray-300 shadow-md">
+        <p class="text-gray-700 text-lg italic mb-2">
+        "Hari ini seorang pembaca, besok seorang pemimpin."
+        </p>
+        <p class="text-indigo-600 text-sm">— Margaret Fuller</p>
+    </div>
+    </div>
+</div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-3xl"></span>
+                        <span class="text-2xl font-bold">One Read</span>
+                    </div>
+                    <p class="text-blue-200">Semerbak Literasi dari Sumedang untuk Indonesia</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="home.html" class="text-blue-200 hover:text-yellow-300 transition">Home</a></li>
+                        <li><a href="rekomendasi.html" class="text-blue-200 hover:text-yellow-300 transition">Rekomendasi Buku</a></li>
+                        <li><a href="edukasi.html" class="text-blue-200 hover:text-yellow-300 transition">Edukasi</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
+                        <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-feather="phone"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-feather="globe"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 pt-8 text-center">
+                <p class="text-blue-200">© 2025 OneRead | Dibuat Oleh Muhammad Aprizal Sanjaya IFSU</p>
+            </div>
+            <script src="js/rekomendasi.js"></script>
+        </div>
+    </footer>
+</body>
+<script>
+    feather.replace();
+</script>
+</html>
