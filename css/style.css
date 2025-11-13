@@ -4,13 +4,13 @@
         }
         
         .navbar-scrolled {
-            background: rgba(59, 130, 246, 0.95);
+            background: rgba(14, 104, 249, 0.95);
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(16, 185, 129, 0.6));
+            background: linear-gradient(135deg, rgba(14, 106, 255, 0.95), rgba(16, 185, 129, 0.6));
         }
         
         .card-hover {
@@ -56,4 +56,18 @@
 
         .search-focus:focus {
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Styling page edukasi */
+                .tab-btn {
+            transition: all 0.3s ease;
+        }
+                .tab-btn {
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #3B82F6, #10B981);
+            color: white;
+            transform: scale(1.05);
         }
