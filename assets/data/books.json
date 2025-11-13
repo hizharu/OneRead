@@ -7,7 +7,8 @@
     "category": "Drama, Pendidikan",
     "rating": 4.8,
     "gradient": "from-blue-400 to-green-400",
-    "description": "Kisah inspiratif tentang perjuangan anak-anak di Belitung untuk mendapatkan pendidikan."
+    "description": "Kisah inspiratif tentang perjuangan anak-anak di Belitung untuk mendapatkan pendidikan.",
+    "link": "https://id.wikipedia.org/wiki/Laskar_Pelangi_(novel)"
   },
   {
     "title": "Negeri 5 Menara",
@@ -17,7 +18,8 @@
     "category": "Inspiratif, Motivasi",
     "rating": 4.9,
     "gradient": "from-yellow-400 to-orange-400",
-    "description": "Perjalanan seorang santri dalam mengejar mimpi hingga ke negeri-negeri jauh."
+    "description": "Perjalanan seorang santri dalam mengejar mimpi hingga ke negeri-negeri jauh.",
+    "link": "https://id.wikipedia.org/wiki/Negeri_5_Menara"
   },
   {
     "title": "Bumi Manusia",
@@ -27,7 +29,8 @@
     "category": "Sejarah, Fiksi",
     "rating": 4.7,
     "gradient": "from-green-400 to-teal-400",
-    "description": "Novel klasik tentang kehidupan di masa kolonial Hindia Belanda yang penuh intrik."
+    "description": "Novel klasik tentang kehidupan di masa kolonial Hindia Belanda yang penuh intrik.",
+    "link": "https://id.wikipedia.org/wiki/Bumi_Manusia_(novel)"
   },
   {
     "title": "Sang Pemimpi",
@@ -37,7 +40,8 @@
     "category": "Drama, Inspiratif",
     "rating": 4.6,
     "gradient": "from-purple-400 to-pink-400",
-    "description": "Lanjutan Laskar Pelangi tentang mimpi tiga sahabat untuk pergi ke Paris."
+    "description": "Lanjutan Laskar Pelangi tentang mimpi tiga sahabat untuk pergi ke Paris.",
+    "link": "https://id.wikipedia.org/wiki/Sang_Pemimpi"
   },
   {
     "title": "Ayat-Ayat Cinta",
@@ -47,7 +51,8 @@
     "category": "Romance, Religi",
     "rating": 4.5,
     "gradient": "from-red-400 to-pink-400",
-    "description": "Kisah cinta yang penuh dengan nilai-nilai keislaman dan kehidupan di Mesir."
+    "description": "Kisah cinta yang penuh dengan nilai-nilai keislaman dan kehidupan di Mesir.",
+    "link": "https://id.wikipedia.org/wiki/Ayat-Ayat_Cinta_(novel)"
   },
   {
     "title": "Perahu Kertas",
@@ -57,7 +62,8 @@
     "category": "Romance, Kehidupan",
     "rating": 4.4,
     "gradient": "from-cyan-400 to-blue-400",
-    "description": "Perjalanan cinta Keenan dan Kugy yang penuh warna dan mimpi."
+    "description": "Perjalanan cinta Keenan dan Kugy yang penuh warna dan mimpi.",
+    "link": "https://id.wikipedia.org/wiki/Perahu_Kertas_(novel)"
   },
   {
     "title": "Filosofi Teras",
@@ -67,7 +73,8 @@
     "category": "Self-Help, Filosofi",
     "rating": 4.8,
     "gradient": "from-indigo-400 to-purple-400",
-    "description": "Penerapan filosofi Stoic untuk kehidupan sehari-hari yang lebih tenang."
+    "description": "Penerapan filosofi Stoic untuk kehidupan sehari-hari yang lebih tenang.",
+    "link": "https://id.wikipedia.org/wiki/Filosofi_Teras"
   },
   {
     "title": "Atomic Habits",
@@ -77,7 +84,8 @@
     "category": "Self-Improvement",
     "rating": 4.9,
     "gradient": "from-orange-400 to-red-400",
-    "description": "Cara mudah dan terbukti untuk membentuk kebiasaan baik dan menghilangkan yang buruk."
+    "description": "Cara mudah dan terbukti untuk membentuk kebiasaan baik dan menghilangkan yang buruk.",
+    "link": "https://jamesclear.com/atomic-habits"
   },
   {
     "title": "Ronggeng Dukuh Paruk",
@@ -87,7 +95,8 @@
     "category": "Budaya, Drama",
     "rating": 4.7,
     "gradient": "from-amber-400 to-yellow-400",
-    "description": "Kisah tragis seorang ronggeng di desa terpencil Jawa."
+    "description": "Kisah tragis seorang ronggeng di desa terpencil Jawa.",
+    "link": "https://id.wikipedia.org/wiki/Ronggeng_Dukuh_Paruk"
   },
   {
     "title": "Sapiens",
@@ -97,7 +106,8 @@
     "category": "Sejarah, Sains",
     "rating": 4.8,
     "gradient": "from-slate-400 to-gray-400",
-    "description": "Sejarah singkat tentang evolusi manusia dari zaman batu hingga era modern."
+    "description": "Sejarah singkat tentang evolusi manusia dari zaman batu hingga era modern.",
+    "link": "https://id.wikipedia.org/wiki/Sapiens:_Riwayat_Singkat_Umat_Manusia"
   },
   {
     "title": "Cantik Itu Luka",
@@ -107,7 +117,8 @@
     "category": "Sastra, Magis Realis",
     "rating": 4.6,
     "gradient": "from-rose-400 to-red-400",
-    "description": "Epik keluarga yang penuh dengan realisme magis khas Indonesia."
+    "description": "Epik keluarga yang penuh dengan realisme magis khas Indonesia.",
+    "link": "https://id.wikipedia.org/wiki/Cantik_Itu_Luka"
   },
   {
     "title": "The Subtle Art of Not Giving a F*ck",
@@ -117,6 +128,7 @@
     "category": "Self-Help, Motivasi",
     "rating": 4.5,
     "gradient": "from-gray-400 to-zinc-400",
-    "description": "Pendekatan berbeda tentang menjalani hidup yang lebih baik."
+    "description": "Pendekatan berbeda tentang menjalani hidup yang lebih baik.",
+    "link": "https://id.wikipedia.org/wiki/Sebuah_Seni_untuk_Bersikap_Bodo_Amat"
   }
 ]
