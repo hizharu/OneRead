@@ -42,7 +42,7 @@
             document.getElementById('quizResult').classList.remove('hidden');
         }
 
-        function resetQuiz() {
+            function resetQuiz() {
             document.getElementById('quizContent').classList.remove('hidden');
             document.getElementById('quizResult').classList.add('hidden');
         }
